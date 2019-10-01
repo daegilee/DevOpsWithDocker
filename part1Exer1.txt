@@ -1,3 +1,0 @@
-9131af24ae84        nginx               "nginx -g 'daemon of…"   4 days ago          Exited (0) 34 seconds ago                       hopeful_chatterjee
-0e84642ab8f3        nginx               "nginx -g 'daemon of…"   4 days ago          Exited (0) 34 seconds ago                       vigorous_ganguly
-265cc11c6674        nginx               "nginx -g 'daemon of…"   4 days ago          Up 4 days                   80/tcp              reverent_lewin
