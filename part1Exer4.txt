@@ -1,0 +1,9 @@
+Commands:
+docker run -d devopsdockeruh/exec_bash_exercise
+docker container ls //optional to see if container from image is running after previous command
+docker exec -it 3f3 bash //3f3 is container ID; forgot to give container alt name 
+
+Within container, run: tail -f ./logs.txt
+
+Secret message: "Docker is easy"
+
