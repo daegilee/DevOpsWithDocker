@@ -1,1 +1,7 @@
 This is the secret message
+
+Commands:
+Go to Docker Hub
+Find password - "basics"
+Enter password to get secret message
+
