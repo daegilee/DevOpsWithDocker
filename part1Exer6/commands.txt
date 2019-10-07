@@ -1,0 +1,9 @@
+Commands:
+
+touch Dockerfile
+nano Dockerfile
+
+add CMD tag docker-clock
+
+docker build .
+docker run docker-clock
