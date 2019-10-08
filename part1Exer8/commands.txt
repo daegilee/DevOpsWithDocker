@@ -1,0 +1,3 @@
+NOTE: need to create logs.txt file prior to running below command; otherwise docker will create logs.txt as directory
+docker run --rm -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
+
