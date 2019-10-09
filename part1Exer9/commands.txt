@@ -1,0 +1,4 @@
+docker run --rm -p 3000:80 devopsdockeruh/ports_exercise
+
+After container is running:
+Go to browser and type in URL http://localhost:3000 to view message 
