@@ -1,0 +1,21 @@
+Application URL: https://devopswithdocker-heroku.herokuapp.com/
+
+Process and Commands: 
+1. Pull image from Docker hub
+	docker pull devopsdockeruh/heroku-example
+2. Make Heroku account and download CLI
+	brew tap heroku/brew && brew install heroku
+3. Login to Heroku CLI
+	heroku login -i (this will login via terminal instead of opening browser window)
+4. Create app on Heroku
+	Provide name for application (mine was devopswithdocker-heroku)
+5. Initialize git repo (new or existing)
+	Mine was already initialized as I was using GitHub to track this project
+	Only command needed to run: heroku git:remote -a devopswithdocker-heroku
+6. Login into Heroku conatiner registry
+	heroku container:login
+7. Tag pulled image from Docker Hub as name they requested in instructions
+	docker tag devopsdockeruh/heroku-example registry.heroku.com/devopswithdocker-heroku/web
+8. Release app via Heroku CLI
+	heroku container:release web
+9. Go to application in browser by clicking link to run app
