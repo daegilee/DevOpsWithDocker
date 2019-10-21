@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./backend-example-docker
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./logs.txt:/usr/app/logs.txt
+  frontend:
+    build:
+      context: ./frontend-example-docker
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000

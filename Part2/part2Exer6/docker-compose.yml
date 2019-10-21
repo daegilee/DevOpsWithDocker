@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  
+  backend:
+    build:
+      context: ./backend-example-docker
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./logs.txt:/usr/app/logs.txt
+    environment: 
+      - REDIS=redis
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=password
+      - DB_HOST=postgres
+  
+  frontend:
+    build:
+      context: ./frontend-example-docker
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+  
+  redis:
+    image: redis
+    
+  postgres:
+    image: postgres
+    environment: 
+      - POSTGRES_PASSWORD=password 
